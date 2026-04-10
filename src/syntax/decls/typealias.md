@@ -5,7 +5,7 @@
 ## Syntax
 
 ```
-typealias <Alias name> = <Actual type>
+typealias <Alias Name> = <Actual Type>
 ```
 
 ## Example

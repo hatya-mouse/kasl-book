@@ -2,39 +2,50 @@
 
 `func` statement declares a function in the top level or struct declarations.
 
+## Specifications
+
+### Parameters
 Functions can have multiple parameters and single return value. If no return type is specified, the function is expected to return no value.
 Every parameters can have an argument label for clarity.
+
+### Struct Member Functions
+In instance functions (functions in struct statement which are not marked `static`), `self` keyword can be used to specify the instance where the function is called.
+
+Static functions can be called on struct name, enabling to create a function which is not called on an instance but belongs to the struct.
 
 ## Syntax
 
 ```
 // Basic
-func <name>() { }
+func <Name>() { }
 
 // With parameters
-func <name>(<param>: <Type>) { }
+func <Name>(<Param>: <Type>) { }
 
 // With return value
-func <name>(<param>: <Type>) -> <Type> { }
+func <Name>(<Param>: <Type>) -> <Type> { }
 
 // With argument label
-func <name>(<label> <param>: <Type>) { }
+func <Name>(<Label> <Param>: <Type>) { }
 
 // With default value
-func <name>(<param> = <default>) { }
+func <Name>(<Param> = <Default Value>) { }
 
 // Static function
-static func <name>() { }
+static func <Name>() { }
 ```
 
 ## Example 1 --- Basic
 
 The program below declares a function called greet, which takes no parameters and returns nothing.
-Note that the program cannot be compiled because it does not have a `main` function.
 
 ```kasl
 func greet() {
     // Do something
+}
+
+func main() {
+    greet()
 }
 ```
 
@@ -66,7 +77,31 @@ func main() {
 }
 ```
 
-## Example 3 --- Static Function
+## Example 3 --- Instance Function
+
+The following program creates an instance function called `increment` and `add` which mutate the struct field `count`.
+
+```kasl
+struct Counter {
+    var count = 0
+
+    func increment() {
+        self.count = self.count + 1
+    }
+
+    func add(amount: Int) {
+        self.count = self.count + amount
+    }
+}
+
+func main() {
+    var c = Counter()
+    c.increment() // 1
+    c.add(5) // 6
+}
+```
+
+## Example 4 --- Static Function
 
 The program below creates a static function called `unit`, which can be called by `Circle.unit()` using its belonging type name `Circle`.
 

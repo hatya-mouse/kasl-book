@@ -1,4 +1,4 @@
-## Top-Level Statemnets
+## Top-Level Statements
 
 These are the statements can be used in the top level to declare symbols such as variables, structs and functions.
 
@@ -12,8 +12,8 @@ These are the statements can be used in the top level to declare symbols such as
 | state | Defines a state variable. | [State](state.md) |
 | let | Defines a global constant. | [Let](global_let.md) |
 | struct | Defines a struct. | [Struct](struct.md) |
-| operator | Defines an operator information. | [Operator](operator.md) |
-| Operator Function | Declares the implementation of an operator for the specific operand types. | [Operator Function](op_func.md) |
+| operator infix / prefix / postfix | Defines the precedence and the associativity for the operator. | [Operator Definition](operator.md) |
+| func infix / prefix / postfix | Declares the implementation of an operator for the specific operand types. | [Operator Function](op_func.md) |
 
 ## Struct Statements
 

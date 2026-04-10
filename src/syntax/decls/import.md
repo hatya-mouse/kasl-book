@@ -2,13 +2,15 @@
 
 `import` statement imports an external KASL file in search paths and makes it accessible inside the program.
 
+## Specifications
+
 Symbols in the imported file can be accessed by the file name without the extension `.kasl`, just like `foo.pi` in the example below.
 If you would like to import a file in the subdirectory of the directory at the search path, you can write the path using `/` (slash) to access its subdirectories.
 
 ## Syntax
 
 ```
-import <Path to the file>
+import <Path to the File>
 ```
 
 ## Example 1

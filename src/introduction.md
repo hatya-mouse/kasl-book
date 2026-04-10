@@ -1,7 +1,7 @@
 # KASL
 
 KASL is a statically typed programming language built for audio synthesis and creating audio effects.
-Its syntax is heavily inspired by [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language)), but not based on it and does not have complex memory management system like ARC.
+Its syntax is heavily inspired by [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language)), but is not based on it and does not have complex memory management system like ARC.
 
 ## Example of KASL
 
@@ -116,4 +116,4 @@ func add(lhs a: Int, rhs b: Int) -> Int {
 
 ## Links
 
-The documentation of the syntax of KASL can be found [here](core/core.md).
+If you are looking for the syntax of the KASL language, it can be found at [Syntax](./syntax/index.md).
