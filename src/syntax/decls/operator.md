@@ -3,7 +3,7 @@
 `operator` statement defines a custom operator and its precedence and associativity.
 The implementation of the operator is defined separately using the [operator function](./op_func.md) statement.
 
-# Specifications
+## Specifications
 
 `infix` operators take two operands on both sides, `prefix` operators take a single operand on the right, and `postfix` operators take a single operand on the left.
 
@@ -13,7 +13,7 @@ Associativity determines how operators of the same precedence are grouped.
 `left` groups from the left, `right` groups from the right, and `none` disallows chaining operators of the same precedence.
 Prefix and postfix operators do not have associativity.
 
-# Syntax
+## Syntax
 
 ```
 operator infix <Symbol> {
@@ -30,7 +30,7 @@ operator postfix <Symbol> {
 }
 ```
 
-# Example
+## Example
 
 This example program defines a custom operator `**` and declares its implementation for `Float` using [operator function](./op_func.md) statement.
 
