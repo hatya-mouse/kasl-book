@@ -21,7 +21,7 @@ state <Name>: <Type> = <Default Value>
 
 ## Example
 
-This example program declares a new state variable called `counter` and increments it in the every iterations.
+This example program declares a new state variable called `counter` and increments it in the every iteration.
 
 ```kasl
 import std

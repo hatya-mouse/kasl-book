@@ -4,11 +4,10 @@
 
 ## Specifications
 
-### Parameters
 Functions can have multiple parameters and single return value. If no return type is specified, the function is expected to return no value.
-Every parameters can have an argument label for clarity.
 
-### Struct Member Functions
+Every parameter can have an argument label for clarity. If the argument label is specified on function call, the argument will match to be the first parameter that has the same argument label. The subsequent arguments will match to the parameters following the labeled one, so the the order of the parameters cannot be changed. Any parameters skipped in this process will use their default values.
+
 In instance functions (functions in struct statement which are not marked `static`), `self` keyword can be used to specify the instance where the function is called.
 
 Static functions can be called on struct name, enabling to create a function which is not called on an instance but belongs to the struct.
