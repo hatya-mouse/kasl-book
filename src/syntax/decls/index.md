@@ -1,3 +1,5 @@
+# Declarations
+
 ## Top-Level Statements
 
 These are the statements can be used in the top level to declare symbols such as variables, structs and functions.
