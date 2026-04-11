@@ -91,7 +91,7 @@ func main() {
 
     // If and If-else statements.
     if bool_in {
-        int_state = add(int_state, 1)
+        int_state = add(lhs: int_state, rhs: 1)
     }
 
     if float_in > 0.0 {
@@ -103,7 +103,7 @@ func main() {
     // Constant loop statement.
     var i = 0
     loop 4 {
-        int_state = add(int_state, i)
+        int_state = add(lhs: int_state, rhs: i)
         i = i + 1
     }
 }
