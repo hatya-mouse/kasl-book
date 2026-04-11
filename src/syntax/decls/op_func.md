@@ -20,7 +20,7 @@ func postfix <Symbol>(operand: <Type>) -> <Type> { }
 
 ## Example 1 --- Infix Operator
 
-This example program defines a custom operator `%%` that calculates the average of two operands.
+This example program defines a custom infix operator `%%` that calculates the average of two operands.
 
 ```kasl
 import std
