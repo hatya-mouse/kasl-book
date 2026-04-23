@@ -5,7 +5,9 @@ Its syntax is heavily inspired by [Swift](https://en.wikipedia.org/wiki/Swift_(p
 
 ## Example of KASL
 
-For those who want to grasp the syntax, here's an example of KASL code.
+For those who want to grasp the syntax, here's an example of KASL code, which includes various features of the language.
+The syntax of the KASL language can be found at [Syntax](./syntax/index.md).
+For the detailed explanation of every statements, please refer to the [Statements](./stmts/index.md).
 
 ```kasl
 // Import the std library.
@@ -113,7 +115,3 @@ func add(lhs a: Int, rhs b: Int) -> Int {
     return a + b
 }
 ```
-
-## Links
-
-If you are looking for the syntax of the KASL language, it can be found at [Syntax](./syntax/index.md).
