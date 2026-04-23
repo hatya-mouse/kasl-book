@@ -4,7 +4,7 @@ Statements can be used inside functions, and creates the actual execution logic.
 
 | Statement | Description | Link |
 | --- | --- | --- |
-| Block | Creates a scope. | [Block](./block.md) |
+| {} | Creates a scope. | [Block](./block.md) |
 | var | Declares a local variable. | [Var](./var.md) |
 | let | Declares a local constant. | [Let](./let.md) |
 | = | Assigns a value to the variable or its field. | [Assign](./assign.md) |
