@@ -41,7 +41,7 @@ Statements can be used inside functions, and creates the actual execution logic.
 | Block | Creates a scope. | [Block](./stmts/block.md) |
 | var | Declares a local variable. | [Var](./stmts/var.md) |
 | let | Declares a local constant. | [Let](./stmts/let.md) |
-| Assign | Assigns a value to the variable or its field. | [Assign](./stmts/assign.md) |
+| = | Assigns a value to the variable or its field. | [Assign](./stmts/assign.md) |
 | if / if-else | Conditionally execute the statements. | [If](./stmts/if.md) |
 | return | Exits from the function with a return value. | [Return](./stmts/return.md) |
 | loop | Creates a loop that will be executed specific times. | [Loop](./stmts/loop.md) |
