@@ -1,7 +1,7 @@
 # Variables
 
 KASL supports variables, which are used to store values that can be used throughout a program. Variables can be assigned values using the `=` operator, and their values can be accessed by simply using their names.
-Every variable in KASL has a type, which determines the kind of data it can hold. The type of a variable is determined at the time of its declaration and cannot be changed later. KASL supports several basic types, including `Int`, `Float`, and `Bool`. See more about types in the [Types](./types.md) section.
+Every variable in KASL has a type, which determines the kind of data it can hold. The type of a variable is determined at the time of its declaration and cannot be changed later. KASL supports several basic types, including `Int`, `Float`, and `Bool` which are called "Primitive Types". See more about types in the [Types](./types.md) section.
 
 KASL has 7 types of variables, which we will cover in the following sections — but don't worry, they are all pretty similar and should be easy for you to understand!
 
@@ -11,8 +11,8 @@ KASL has 7 types of variables, which we will cover in the following sections —
 | --- | --- |
 | [Local Variables](#1-local-variables) | Stores the value in functions. |
 | [Local Constants](#2-local-constants) | Declares an unchangeable value. |
-| [Global Input Variables](#3-global-input-variables) | Used to get the input data from the host. |
-| [Global Output Variables](#4-global-output-variables) | Used to pass the output data to the host. |
+| [Global Input Variables](#3-global-input-variables) | Receives the input data from the host. |
+| [Global Output Variables](#4-global-output-variables) | Passes the output data to the host. |
 | [Global State Variables](#5-global-state-variables) | Used to preserve data over execution iterations. |
 | [Global Constants](#6-global-constants) | Declares an unchangeable value which can be used across the program. |
 | [Struct Fields](#7-struct-fields) | Stores the value in structs. |
@@ -110,11 +110,6 @@ struct Point {
 When you initialize a struct, the default values for the fields will be used. For example:
 
 ```kasl
-struct Point {
-    var x = 0.0
-    var y = 0.0
-}
-
 func main() {
     let p = Point()
     // p.x is 0.0
