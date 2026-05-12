@@ -98,17 +98,19 @@ struct C {
 Typealiases allow you to create a new name for an existing type. This can be useful for improving code readability or for creating more descriptive names for complex types.
 
 ```kasl
-typealias Age = Int
+typealias Sample = [Float; 2]
 ```
 
-In this example, we create a typealias named `Age` that is an alias for the `Int` type. We can now use `Age` in our code to refer to `Int`, which can make our code more readable when we are specifically referring to ages.
+In this example, we create a typealias named `Sample` that is an alias for the `[Float; 2]` type. We can now use `Sample` in our code to refer to `[Float; 2]`, which can make our code more readable when we are specifically referring to samples.
 
 ```kasl
+output out = [0.0; 2]
+
 func main() {
-    let my_age: Age = 30
-    print(my_age) // Output: 30
+    let my_sample: Sample = [0.5, 0.8]
+    out = my_sample
 }
 ```
 
-Typealias just creates a new name for an existing type, it does not create a new type. This means that `Age` and `Int` are interchangeable in the code.
-You can set `Int` values to `Age` variables and vice versa without any issues.
+Typealias just creates a new name for an existing type, it does not create a new type. This means that `Sample` and `[Float; 2]` are interchangeable in the code.
+You can set `[Float; 2]` values to `Sample` variables and vice versa without any issues.
